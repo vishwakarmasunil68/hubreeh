@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.git.hubreeh.view.jobseeker.activity.MembershipActivity">
+
+
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_membership"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradient_toolbar_background"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        app:tabTextColor="@color/colorBlack"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabIndicatorColor="@color/colorWhite" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_membership"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

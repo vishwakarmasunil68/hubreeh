@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_drawable"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.git.hubreeh.view.jobseeker.activity.ProjectDetailsActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="0dp"
+        sothree:umanoShadowHeight="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp_22"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/sp_16"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvDec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_14"
+                            android:visibility="visible" />
+
+                        <com.git.hubreeh.helper.ExpandableLayout
+                            android:id="@+id/expandable_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:el_duration="300"
+                            app:el_expanded="false">
+
+                            <TextView
+                                android:id="@+id/tvFull"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp" />
+
+                        </com.git.hubreeh.helper.ExpandableLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/readMore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_05"
+                            android:fontFamily="@font/lato_regular"
+                            android:gravity="end"
+                            android:paddingEnd="@dimen/dp_15"
+                            android:text="@string/read_more"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp_15"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@color/colorGrey" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/job_budget_aed"
+                            android:textColor="@color/colorPrimary" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/sp_22"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@color/colorGrey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:text="@string/avg_bid_aed"
+                                    android:textColor="@color/colorPrimary" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tvAvgBid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textColor="@color/colorGrey"
+                                    android:textSize="@dimen/sp_22"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/lato_regular"
+                                android:gravity="center"
+                                android:text="@string/slash"
+                                android:textColor="@color/colorGrey"
+                                android:textSize="50sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:gravity="center"
+                                    android:text="@string/bids"
+                                    android:textColor="@color/colorPrimary" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tvBidCount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorGrey"
+                                    android:textSize="@dimen/sp_22"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@color/colorGrey" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvTotalBids"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp_12" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/bidsRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false" />
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/job_id"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp_12" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvJobID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/_9872345"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_15" />
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_view_profile_job_creater"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_30"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="View Employer Profile"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_18"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_15">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_company_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/employeer_from_abu_dhabi"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_12" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_company_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_company_name"
+                            android:layout_marginTop="@dimen/dp_05"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="@font/lato_regular"
+                            android:paddingEnd="@dimen/dp_05"
+                            android:paddingStart="@dimen/dp_05"
+                            android:text="@string/_5_0"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/rate"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dp_05"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:layout_toEndOf="@+id/tv_company_rating"
+                            android:numStars="5"
+                            android:rating="4"
+                            android:theme="@style/RatingBar" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_company_rating"
+                            android:layout_marginTop="@dimen/dp_05"
+                            android:background="@color/colorGreen"
+                            android:fontFamily="@font/lato_regular"
+                            android:paddingEnd="@dimen/dp_05"
+                            android:paddingStart="@dimen/dp_05"
+                            android:text="@string/payment_verified"
+                            android:textColor="@color/colorWhite" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".50"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dp_20"
+                            app:mrl_rippleAlpha="0.2"
+                            app:mrl_rippleColor="@color/colorPink"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/btn_place_bid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary"
+                                android:fontFamily="@font/lato_regular"
+                                android:gravity="center"
+                                android:text="@string/place_a_bid"
+                                android:textColor="@color/colorBlack" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_place_bid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</LinearLayout>

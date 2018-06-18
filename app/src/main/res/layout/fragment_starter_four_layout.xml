@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_drawable"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/welcome_n_to_hub_reeh_n_revolutionising_n_temporary_n_recruitment"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp" />
+
+
+    <RadioGroup
+        android:id="@+id/rd_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ripple_fbsignup"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            style="@style/MyRadioButton"
+            android:id="@+id/rbSeeker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Seeker"
+            />
+
+        <RadioButton
+            style="@style/MyRadioButton"
+            android:id="@+id/rbBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="Business" />
+
+
+    </RadioGroup>
+
+
+    <!--Im Seeker-->
+    <!--<com.balysv.materialripple.MaterialRippleLayout-->
+        <!--android:id="@+id/ripple_jobseeker"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/ripple_businbess"-->
+        <!--android:layout_marginBottom="@dimen/dp_10"-->
+        <!--android:layout_marginEnd="@dimen/dp_30"-->
+        <!--android:layout_marginStart="@dimen/dp_30"-->
+        <!--app:mrl_rippleAlpha="0.2"-->
+        <!--app:mrl_rippleColor="@color/colorPink"-->
+        <!--app:mrl_rippleDelayClick="true"-->
+        <!--app:mrl_rippleHover="true"-->
+        <!--app:mrl_rippleOverlay="true"-->
+        <!--app:mrl_rippleRoundedCorners="10dp">-->
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/btn_job_seeker"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/background_btn_starter_page"-->
+            <!--android:fontFamily="@font/lato_regular"-->
+            <!--android:padding="@dimen/dp_20"-->
+            <!--android:text="@string/i_m_a_job_seeker"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@drawable/text_selector_starter_page" />-->
+
+    <!--</com.balysv.materialripple.MaterialRippleLayout>-->
+<!--Im busniess-->
+    <!--<com.balysv.materialripple.MaterialRippleLayout-->
+        <!--android:id="@+id/ripple_businbess"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="@dimen/dp_50"-->
+        <!--android:layout_marginEnd="@dimen/dp_30"-->
+        <!--android:layout_marginStart="@dimen/dp_30"-->
+        <!--app:mrl_rippleAlpha="0.2"-->
+        <!--app:mrl_rippleColor="@color/colorPink"-->
+        <!--app:mrl_rippleDelayClick="true"-->
+        <!--app:mrl_rippleHover="true"-->
+        <!--app:mrl_rippleOverlay="true"-->
+        <!--app:mrl_rippleRoundedCorners="10dp">-->
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/btn_business"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/background_btn_starter_page"-->
+            <!--android:fontFamily="@font/lato_regular"-->
+            <!--android:padding="@dimen/dp_20"-->
+            <!--android:text="@string/i_m_a_business"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@drawable/text_selector_starter_page" />-->
+    <!--</com.balysv.materialripple.MaterialRippleLayout>-->
+
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple_fbsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ripple_signup"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_30"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/colorPink"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="10dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_fbsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_starter_page"
+            android:fontFamily="@font/lato_regular"
+            android:padding="@dimen/dp_20"
+            android:text="@string/signup_with_facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/text_selector_starter_page" />
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_30"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/colorPink"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="10dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_starter_page"
+            android:fontFamily="@font/lato_regular"
+            android:padding="@dimen/dp_20"
+            android:text="@string/signup"
+            android:textAllCaps="false"
+            android:textColor="@drawable/text_selector_starter_page" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="end"
+        android:paddingEnd="@dimen/dp_30"
+        android:text="@string/sign_in"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_16"
+        tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+
+</RelativeLayout>

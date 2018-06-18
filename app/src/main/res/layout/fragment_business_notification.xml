@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/splash_drawable">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_05"
+                android:text="Email"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:theme="@style/TextLabel">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Email Address"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/sp_18" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_05"
+                    android:layout_marginStart="@dimen/dp_05"
+                    android:layout_weight=".50"
+                    android:theme="@style/TextLabel">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Verify Password"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/sp_18" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/colorPink"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Update Email Address"
+                    android:textAllCaps="false" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+            <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_05"
+            android:layout_marginTop="@dimen/dp_05"
+            android:text="Email Format"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_email_format"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@drawable/mybg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Digest emails for your posted projects"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="When a bid is placed /update /retracted/an your project"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Notification from your posted comment "
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="When you receive an entry for your contest"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="We notify you of recent Top Contests"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Notification of latest projects posted"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="When a project get posted that matches any selected skills"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/colorGrey" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Notification of latest local jobs"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="SMS notification when a employer is interested in hiring me"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="When a local job in my area gets posted"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Digest emails for messages"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="When you receive a private message from a contact"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="When you receive a message about a project or contest"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="When you receive a message from Hubreeh.com staff"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Individual Notification"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="News and announcement from Hubreeh.com"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="A buyer awards you a project"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="A Hubreeh request you to release a milestone payment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="We notify you top bidders for your project"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="We notify you of the latest activity regarding Servie"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_15">
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_05"
+                android:text="We notify you of the latest activity regarding Freemarket"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_15"
+                android:paddingStart="@dimen/dp_05"
+                android:paddingEnd="@dimen/dp_05"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="A freelancer request you as a contact"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_05"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Other Notification"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="Marketing emails"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="Hubreeh.com deals"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="Monthly Newsletter"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_05"
+                    android:layout_marginTop="@dimen/dp_05"
+                    android:text="Weekly community digest"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_15"
+                    android:paddingStart="@dimen/dp_05"
+                    android:paddingEnd="@dimen/dp_05"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/colorGrey" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_30"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/colorPink"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textColor="@color/colorBlack"
+                    android:background="@color/colorPrimary"
+                    />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

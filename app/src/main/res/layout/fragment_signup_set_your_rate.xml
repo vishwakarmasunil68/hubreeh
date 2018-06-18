@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_rate_and_availability"
+    android:background="@drawable/splash_drawable"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/rate"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_signup_job_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white"
+                android:maxLength="5"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".50"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/availability"
+                    android:gravity="start|center"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_select_all"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".50"
+                    android:gravity="end|center"
+                    android:fontFamily="@font/lato_regular"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@string/select_all"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorGrey" />
+
+            <CheckBox
+                android:id="@+id/cb_work_48_hour_per_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_05"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/i_agree_that_i_may_work_for_more_than_an_naverage_of_48_hours_per_week_if_i_change_my_nmind_i_will_give_my_employer_3_month_notice_nin_writing_to_end_his_agreement"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/MyCheckBox" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_05"
+                android:background="@color/colorGrey" />
+
+            <CheckBox
+                android:id="@+id/cb_full_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/i_m_also_interested_in_full_time_roles"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/MyCheckBox" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_05"
+                android:background="@color/colorGrey" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/colorPink"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_rate_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/_continue"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

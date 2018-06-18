@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "54166887992",
+    "firebase_url": "https://hub-reeh.firebaseio.com",
+    "project_id": "hub-reeh",
+    "storage_bucket": "hub-reeh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54166887992:android:f14259b87c5bf5ea",
+        "android_client_info": {
+          "package_name": "com.git.hubreeh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54166887992-7udrudgbmt6balrc6ulr8avihr0ai94l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.git.hubreeh",
+            "certificate_hash": "66445e9174dad8d8f09258e4a1734ae666bf1c6c"
+          }
+        },
+        {
+          "client_id": "54166887992-bmf4k49npfl7i800vfupm8k1gqp5d56g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4IJmTrnBpE9u-yGdMHZ-nwKjEnJOMpoI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54166887992-bmf4k49npfl7i800vfupm8k1gqp5d56g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

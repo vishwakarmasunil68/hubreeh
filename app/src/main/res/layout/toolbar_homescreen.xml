@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_homescreen"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    android:background="@drawable/gradient_toolbar_background"
+    android:orientation="vertical"
+    android:theme="@style/ToolbarStyle"
+    app:subtitleTextColor="@color/colorBlack"
+    app:titleTextAppearance="@style/Toolbar.TitleText"
+    app:titleTextColor="@color/colorBlack">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center|start"
+            android:paddingStart="@dimen/dp_10"
+            android:text="My Jobs"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/arrow"
+            android:src="@drawable/ic_search_black"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_three_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/arrow"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/three_dots"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="Mark all read"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:ignore="RtlSymmetry" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

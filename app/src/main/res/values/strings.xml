@@ -1,0 +1,317 @@
+<resources>
+    <string name="app_name">Hub Reeh</string>
+    <string name="one">one</string>
+    <string name="two">two</string>
+    <string name="three">three</string>
+    <string name="four">four</string>
+    <string name="welcome_n_to_hub_reeh_n_revolutionising_n_temporary_n_recruitment">Welcome \nto <b>Hub ReeH</b>\nRevolutionising\ntemporary\nrecruitment</string>
+
+
+    <!--activity_chat-->
+    <string name="write_a_message">Write a message...</string>
+    <string name="arrow">arrow</string>
+
+
+    <!--activity_choose_category-->
+    <string name="it_s_free_to_post_a_project">It\'s free to post a project</string>
+    <string name="bar_pack">Bar Pack</string>
+    <string name="some_description_text">Some description text...</string>
+    <string name="barista">Barista</string>
+    <string name="bar_staff">Bar Staff</string>
+    <string name="chef">Chef</string>
+    <string name="general_staff">General Staff</string>
+    <string name="hostess">Hostess</string>
+    <string name="kitchen_porter">Kitchen Porter</string>
+    <string name="receptionist">Receptionist</string>
+
+
+    <!--activity_company_page-->
+    <string name="xyz_company_pvt_ltd">XYZ Company Pvt Ltd</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="aed_20000">AED 20000</string>
+    <string name="_50_bids_remaining">50 Bids remaining</string>
+    <string name="post_a_project">Post a project</string>
+    <string name="get_free_credits">Get Free Credits</string>
+    <string name="invite_friends_and_earn_aed_200">Invite friends and earn AED 200!</string>
+    <string name="account_settings">Account settings</string>
+    <string name="membership">Membership</string>
+    <string name="upgrade_your_membership_for_a_better_value">Upgrade your membership for a better value</string>
+    <string name="payment_deposite_funds">Payment/Deposite funds</string>
+    <string name="detail_regarding_your_payment_account">Detail regarding your payment account</string>
+    <string name="switch_account">Switch Account</string>
+    <string name="switch_to_personal_account">Switch to Personal Account</string>
+    <string name="notification">Notification</string>
+    <string name="new_messages">New Messages</string>
+    <string name="show_notification_for_new_incoming_messages">Show notification for new incoming messages</string>
+    <string name="vibration">Vibration</string>
+    <string name="enable_or_disable_vibration_for_incoming_messages">Enable or disable vibration for incoming messages</string>
+    <string name="notification_sound">Notification Sound</string>
+    <string name="sound_played_when_a_new_notification_arrives">Sound played when a new notification arrives</string>
+    <string name="about">About</string>
+    <string name="app_version">App Version</string>
+    <string name="_0_0_1_1230456789">0.0.1(1230456789)</string>
+    <string name="rate">Rate(Per Hour)</string>
+    <string name="rate_the_app_on_playstore">Rate the app on playstore</string>
+    <string name="walkthrough">Walkthrough</string>
+    <string name="learn_more_about_the_app">Learn more about the app</string>
+    <string name="others">Others</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="opens_our_privacy_policy">Opens our privacy policy</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="opens_our_terms_and_conditions_page">Opens our terms and conditions page</string>
+    <string name="feedback">Feedback</string>
+    <string name="provide_os_with_feedback_to_help_us_improve_the_app">Provide os with feedback to help us improve the app</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="ask_us_anytime_for_help_and_support">Ask us anytime for help and support</string>
+    <string name="logout">Logout</string>
+
+
+    <!--deposite_fund-->
+    <string name="depositefund">DepositeFund</string>
+    <string name="_112_000aed">112.000AED</string>
+    <string name="dhirm">Dhirm</string>
+    <string name="select_payment_mode">Select Payment Mode</string>
+    <string name="credit_card">Credit card</string>
+    <string name="paypal">Paypal</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="aed">AED</string>
+    <string name="dihram">Dihram</string>
+    <string name="cardholder_name">Cardholder Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="exp_month">Exp. Month</string>
+    <string name="exp_year">Exp. Year</string>
+    <string name="ccv_cvv">CCV/CVV</string>
+    <string name="you_agree_to_authorize_the_use_of_your_credit_ncard_for_this_deposite_and_future_payments">You agree to authorize the use of your credit  card for this deposite and future payments</string>
+    <string name="deposite_amount">Deposite Amount</string>
+    <string name="_0_00aed">0.00AED</string>
+    <string name="total">Total</string>
+    <string name="pay_0_00_usd">Pay 0.00 USD</string>
+    <string name="this_is_a_secure_128_bit_ssl_encrypted_npayment">This is a secure 128 bit SSL encrypted  payment</string>
+
+    <!--activity_login-->
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="login">login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up!</string>
+
+
+    <!--activity_post_project-->
+    <string name="title">Title</string>
+    <string name="what_do_you_need_done">What do you need done?</string>
+    <string name="budget">Budget</string>
+    <string name="description">Description</string>
+    <string name="add_attachment">Add Attachment</string>
+    <string name="hire_location">Hire Location</string>
+    <string name="add_location">Add location</string>
+    <string name="skills_required_for_the_project">Skills required for the project</string>
+    <string name="add_skills">Add Skills</string>
+    <string name="post_project">POST PROJECT</string>
+
+    <!--activty_project_details-->
+    <string name="need_solution_for_something">Need solution for something</string>
+    <string name="open_6_days_left">Open / 6 Days Left</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_nadipiscing_elit_nulla_hendrerit_null_eu_rutrum_nodio_non_fringilla_libero_lacus_ac_mauris_pellentesque_dignissim_sed_libero_nvitae_facilisis_n_nquisque_convallis_tellus_integer_interdum_sem_neu_risus_scelerisque_ullamcorper_donec_ul_ntricies_molestie_magna_eget_viverra_est_conse_nquat_pharetra_praesent_rhoncus_turpis_ut">Lorem ipsum dolor sit amet, consectetur  adipiscing elit.Nulla hendrerit, null eu rutrum  odio, non fringilla libero lacus ac mauris.Pellentesque dignissim sed libero  vitae facilisis.   Quisque convallis tellus. Integer interdum sem  eu risus scelerisque ullamcorper.Donec ul-  tricies molestie magna, eget viverra est conse-  quat pharetra. Praesent rhoncus turpis ut</string>
+    <string name="read_more">Read More</string>
+    <string name="job_budget_aed">Job Budget (AED)</string>
+    <string name="_3800_aed_4500_aed">3800 AED - 4500 AED</string>
+    <string name="avg_bid_aed">Avg. Bid (AED)</string>
+    <string name="_4100_aed">4100 AED</string>
+    <string name="slash">/</string>
+    <string name="bids">Bids</string>
+    <string name="_12">12</string>
+    <string name="total_bids_12">Total Bids(12)</string>
+    <string name="m">M</string>
+    <string name="mitch_thomas">Mitch Thomas</string>
+    <string name="_6_reviews">(6 reviews)</string>
+    <string name="job_id">Job ID</string>
+    <string name="_9872345">9872345</string>
+    <string name="employeer_from_abu_dhabi">Employeer From Abu Dhabi</string>
+    <string name="_5_0">5.0</string>
+    <string name="payment_verified">Payment Verified</string>
+    <string name="place_a_bid">Place a Bid</string>
+
+    <!--activity_splash-->
+    <string name="hub_reeh">Hub-ReeH</string>
+
+
+    <!--activity_starter-->
+    <string name="skip">Skip</string>
+    <string name="_continue">continue</string>
+
+
+    <!--fragment_membership_plus-->
+    <string name="get_plus">GET PLUS</string>
+    <string name="hub_reeh_plus">Hub ReeH Plus</string>
+
+
+    <!--fragment_membership_professional-->
+    <string name="hub_reeh_professional">Hub ReeH Professional</string>
+    <string name="this_subscription_will_stay_active_until_dec_22_2018">This subscription will stay active until Dec 22,2018</string>
+    <string name="you_are_currently_on_this_plan">You are currently on this plan</string>
+
+
+    <!--fragment_place_bid-->
+    <string name="name_of_the_job">Name of the job...</string>
+    <string name="budget_dihram_1500_3400_aed">Budget(Dihram):1500-3400 AED</string>
+    <string name="bid_amount">Bid Amount</string>
+    <string name="deliver_in_num_of_days">Deliver in(Num of Days)</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDSCw63s-Aqg75sAKCfRy7PSmwUQ797x6s</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!--fragment_signup_describe_yourself-->
+    <string name="about_me">About me</string>
+    <string name="how_did_you_hear_about_us">How did you hear about us?</string>
+    <string name="tv_radio">TV/Radio</string>
+    <string name="search_on_app_store">Search on App Store</string>
+    <string name="friends_and_family">Friends and Family</string>
+    <string name="internet_search_google_or_bing">Internet Search(Google or Bing)</string>
+    <string name="newspaper_online_articales">Newspaper/Online Articales</string>
+    <string name="social_media_blog_post">Social Media/Blog Post</string>
+    <string name="job_board_caterer">Job Board - Caterer</string>
+    <string name="job_board_indeed">Job Board - indeed</string>
+    <string name="job_board_totaljob">Job Board - Totaljob</string>
+    <string name="job_board_other">Job Board - Other</string>
+    <string name="flyer">Flyer</string>
+    <string name="i_can_t_remember">I can\'t remember</string>
+
+
+    <!--fragment_signup_details-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth_mm_yyyy">Date of birth (DD/MM/YYYY)</string>
+    <string name="mobile_number">MOBILE NUMBER</string>
+    <string name="are_you_eligible_to_work_in_uae">Are you eligible to work in UAE?</string>
+
+
+    <!--fragment_signup_email-->
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in!</string>
+    <string name="by_tapping_continue_you_agree_to_the_terms_n_amp_conditions_and_privacy_policy"><![CDATA[By tapping continue, you agree to the Terms   & Conditions and Privacy Policy]]></string>
+
+    <!--fragment_signup_previos_job-->
+    <string name="company_name">Company name</string>
+    <string name="job_role">Job Role</string>
+    <string name="start_mm_yyyy">Start(MM/YYYY)</string>
+    <string name="end_mm_yyyy">End(MM/YYYY)</string>
+    <string name="add_job">add job</string>
+
+
+    <!--fragment_signup_set_your_rate-->
+    <string name="availability">Availability</string>
+    <string name="select_all">SELECT ALL</string>
+    <string name="monday">Monday</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="i_agree_that_i_may_work_for_more_than_an_naverage_of_48_hours_per_week_if_i_change_my_nmind_i_will_give_my_employer_3_month_notice_nin_writing_to_end_his_agreement">I agree that I may work for more than an  average of 48 hours per week. If i change my  mind,I will give my employer 3 month notice  in writing to end his agreement</string>
+    <string name="i_m_also_interested_in_full_time_roles">I\'m also interested in full time roles</string>
+
+
+    <!--fragment_signup_tax_information-->
+    <string name="national_insurance_number">National Insurance Number</string>
+    <string name="i_am_waiting_to_receive_my_national_insurance_number">I am waiting to receive my National Insurance Number</string>
+    <string name="finance_year_to_date_situation">Finance year to date situation</string>
+    <string name="this_is_my_first_job_since_last_6_april_and_i_have_nnot_been_receiving_taxable_jobseeker_s_nallowance_employment_and_support_nallowance_taxable_incapicity_benifit_state_nor_occupational_pension">This is my first job since last 6 April and I have  not been receiving taxable Jobseeker\'s  allowance, Employment and Support  Allowance, taxable Incapicity Benifit State  or Occupational pension.</string>
+    <string name="this_is_now_my_only_job_since_last_6_april_and_i_nhave_had_another_job_or_received_taxable_njobseeker_s_allowance_employment_and_nsupport_allowance_taxable_incapicity_nbenifit_i_do_not_receive_state_or_occupational_pension">This is now my only job since last 6 April and I  have had another job, or received taxable  Jobseeker\'s Allowance, Employment and  Support Allowance, taxable Incapicity  Benifit,I do not receive State or Occupational pension.</string>
+    <string name="i_have_another_job_or_receive_state_or_noccupational_pension">I have another job or receive State or  Occupational pension</string>
+    <string name="student_loan">Student Loan</string>
+    <string name="i_do_not_have_a_student_loan">I do not have a student loan</string>
+    <string name="i_have_a_plan_1_student_loan_before_n_september_2012">I have a plan 1 Student loan(before   September 2012)</string>
+    <string name="i_have_a_plan_2_student_loan_after_september_2012">I have a plan 2 Student loan(after September 2012)</string>
+    <string name="finish">FINISH</string>
+
+
+    <!--fragment_signup_what_do_u_look_like-->
+    <string name="add_a_photo_of_yourself_in_order_to_increase_your_nchances_of_being_noticed_by_employers_the_higher_nquality_the_better">Add a photo of yourself in order to increase your  chances of being noticed by employers. The higher  quality, the better!</string>
+
+
+    <!--fragment_signupbusiness_company_details-->
+    <string name="brand_name">Brand Name</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="industries">INDUSTRIES</string>
+    <string name="hospitality">Hospitality</string>
+    <string name="hiring_capacity">HIRING CAPACITY</string>
+    <string name="_1_2_shifts_per_week">1-2 shifts per week</string>
+    <string name="_2_5_shifts_per_week">2-5 shifts per week</string>
+    <string name="_5_10_shifts_per_week">5-10 shifts per week</string>
+    <string name="_10_20_shifts_per_week">10-20 shifts per week</string>
+    <string name="_20_50_shifts_per_week">20-50 shifts per week</string>
+    <string name="_50_shifts_per_week">50+ shifts per week</string>
+    <string name="register">register</string>
+    <string name="landmark">Landmark</string>
+
+    <!--fragment_signupbusiness_cofirm_firm-->
+    <string name="we_have_received_your_application_na_member_of_our_team_will_be_in_ntouch_shortly">We have received your application,  a member of our team will be in  touch shortly!</string>
+
+    <!--fragment_starter_four_layout,one,two,three-->
+    <string name="i_m_a_job_seeker">I\'m a job seeker</string>
+    <string name="i_m_a_business">I\'m a business</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hub_reeh_pays_better_than_n_other_agencies_and_i_get_n_paid_weekly">Hub-ReeH pays better than   other agencies and I get   paid weekly</string>
+    <string name="the_job_seeker_i_choose_are_professional_just_like_my_own_team">The Job seeker I choose are professional just like my own team!</string>
+    <string name="i_now_feel_like_my_own_boss_n_because_i_got_to_choose_n_when_and_where_to_work">I now feel like my own boss   because i got to choose   when and where to work</string>
+
+
+    <!--home_fragmant_profile-->
+    <string name="abi_rana">ABI RANA</string>
+    <string name="week_n">Week -</string>
+    <string name="min_n1250_naed">Min. 1250 AED</string>
+    <string name="i_m_cool">I,m cool:)</string>
+    <string name="networks">Networks</string>
+    <string name="you_do_not_belong_to_the_any_tursted_networks_yet">You do not belong to the any tursted networks yet</string>
+    <string name="roles">Roles</string>
+    <string name="weekdays">Weekdays</string>
+    <string name="team_leader">Team Leader</string>
+    <string name="not_verified">Not Verified</string>
+    <string name="get_verified">get verified</string>
+    <string name="experience">Experience</string>
+    <string name="delta_tech_pvt_ltd">Delta Tech Pvt. Ltd.</string>
+    <string name="_06_2016_11_2017">06/2016-11/2017</string>
+    <string name="all_days">All days</string>
+
+
+    <!--home_fragment_search-->
+    <string name="type_search_keyword">Type Search keyword...</string>
+    <string name="recommended">Recommended</string>
+    <string name="title_of_the_job">Title of the job</string>
+    <string name="_2500_aed_1_week_left_0_bid">2500 AED - 1 Week Left - 0 Bid</string>
+    <string name="show_more">Show more</string>
+    <string name="categories">Categories</string>
+    <string name="demo_text">Demo Text</string>
+
+
+    <!--recycler_booked-->
+    <string name="bidding">Bidding</string>
+    <string name="avg_bid_6400_aed_14bids_4days_left">Avg bid: 6400 AED - 14Bids - 4Days Left</string>
+
+
+    <!--recycler_messages-->
+    <string name="hey_i_m_interested_in_your_job">Hey i\'m interested in your job.....</string>
+    <string name="_3_51_pm">3:51 PM</string>
+    <string name="s">S</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+
+
+
+    <!--Facebook login credentials-->
+    <string name="facebook_app_id">645692685770624</string>
+    <string name="fb_login_protocol_scheme">fb645692685770624</string>
+    <string name="signup_with_facebook">Signup with Facebook</string>
+    <string name="signup">Signup</string>
+    <string name="job_seeker">Job Seeker</string>
+    <string name="business">Business</string>
+
+
+</resources>

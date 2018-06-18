@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:orientation="horizontal"
+    android:weightSum="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/splash_drawable">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_days"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".60"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/monday"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_day_am"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".20"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="@string/am"
+        android:textColor="@color/colorWhite"
+        android:theme="@style/MyCheckBox" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_day_pm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".20"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="@string/pm"
+        android:textColor="@color/colorWhite"
+        android:theme="@style/MyCheckBox" />
+</LinearLayout>

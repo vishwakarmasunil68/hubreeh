@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_drawable"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
+                android:src="@drawable/logo_hub_reeh"
+                android:contentDescription="@string/arrow" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/hub_reeh_professional"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/this_subscription_will_stay_active_until_dec_22_2018"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_membership_points"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/dp_20"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:background="#979797" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/you_are_currently_on_this_plan"
+            android:fontFamily="@font/lato_regular"
+            android:textAllCaps="false" />
+
+
+</LinearLayout>

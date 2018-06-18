@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_05">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_05"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <com.chauthai.swipereveallayout.SwipeRevealLayout
+            android:id="@+id/swipeRevealLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mode="same_level"
+            app:dragEdge="right">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/heart_like_black"
+                        android:layout_marginEnd="@dimen/dp_05"/>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="3dp"
+                        android:src="@drawable/img_delete"
+                        android:layout_marginEnd="@dimen/dp_05"/>
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_10">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_proposals_user_profile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/default_profile" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_view_proposals_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/dp_10"
+                            android:text="Sakar Subedi"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_05"
+                        android:text="I have read your project requirement and i can deliver you project with 100% quality.Please give me chance to work on your job." />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_05"
+                        android:weightSum="1.0">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".50"
+                            android:text="$ 120 in 1 day"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp_16" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".50"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatRatingBar
+                                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:numStars="5"
+                                android:rating="3"
+                                android:theme="@style/RatingBar" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_05"
+                        android:text="(29 Reviews)"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorBlack" />
+
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mrl_rippleOverlay="true"
+                        app:mrl_rippleColor="@color/colorPink"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        android:layout_marginBottom="@dimen/dp_15"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_10">
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_view_profile_award"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:text="Award"
+                            android:textAllCaps="true" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

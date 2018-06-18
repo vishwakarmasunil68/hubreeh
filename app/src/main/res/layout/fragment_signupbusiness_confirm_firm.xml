@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/splash_drawable">
+
+    <ImageView
+        android:id="@+id/iv_clock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/clock"
+        android:contentDescription="@string/arrow"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/we_have_received_your_application_na_member_of_our_team_will_be_in_ntouch_shortly"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_17"
+        android:textStyle="bold" />
+
+</FrameLayout>
